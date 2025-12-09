@@ -8,19 +8,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMSR9L34');</script>
 <!-- End Google Tag Manager -->
- <!-- Google tag (gtag.js) -->
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0CG40D5NP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-V0CG40D5NP');
+  // GA4 config + allow linker for gclid
+  gtag('config', 'G-V0CG40D5NP', {
+    'allow_linker': true
+  });
 </script>
 
-  <title>Products - Fancy Shop</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<title>Products - Fancy Shop</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,18 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMSR9L34"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <header>
-    <h2>Fancy Shop</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a class="active" href="products.html">Products</a>
-      <a href="cart.html">Cart</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <h2 class="title">Products</h2>
-  <div class="product-grid" id="product-list"></div>
-
-</body>
-</html>
+<header>
+  <h2>Fancy Shop</h2>
+  <nav>
+    <a href="index.html">Home</a>
